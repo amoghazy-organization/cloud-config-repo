@@ -30,12 +30,12 @@ cloud:
         stack:
             auto: false
         credentials:
-            accessKey: <access_key>
-            secretKey: <secret_key>
+            accessKey: AKIAQ4NSBDT2RKOTRCOZ
+            secretKey: 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
 
 application:
     bucket:
-        name: <bucket_name>
+        name: eos-bucket-project
 
 logging:
     level:
