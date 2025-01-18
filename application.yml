@@ -8,19 +8,19 @@ spring:
         hibernate.ddl-auto: create
         show-sql: true
         generate-ddl: false
-  # Producer properties
+    # Producer properties
     kafka:
-      bootstrap-servers: <host kafka>:9092
-      group-id: group_id
+        bootstrap-servers: <host kafka>:9092
+        group-id: group_id
 topic:
-  name:
-    producer: ed-topic-1 
-    consumer: ed-topic-1 
+    name:
+        producer: ed-topic-1
+        consumer: ed-topic-1
 # Common Kafka Properties
 auto:
-  create:
-    topics:
-      enable: true
+    create:
+        topics:
+            enable: true
 
 #AWS properties
 cloud:
@@ -30,12 +30,12 @@ cloud:
         stack:
             auto: false
         credentials:
-            accessKey: <access_key> 
+            accessKey: <access_key>
             secretKey: <secret_key>
 
 application:
     bucket:
-        name: <bucket_name> 
+        name: <bucket_name>
 
 logging:
     level:
@@ -43,5 +43,5 @@ logging:
             amazonaws:
                 util:
                     EC2MetadataUtils: error
- 
-baseUrl: http://prod-gateway-api.local:5555/v1 #gateway service url
+
+baseUrl: http://prod-gateway-api.local:5555/v1 #gateway service url host
